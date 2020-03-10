@@ -10,7 +10,9 @@ function getRandomNumber() {
 console.log('Mi número aleatorio es ' + myNumber);
 
 function game(number) {
-  if (number === myNumber) {
+  if (isNaN(number) || number < 1 || number > 100) {
+    clue.innerHTML = 'El número debe estar entre 1 y 100';
+  } else if (number === myNumber) {
     clue.innerHTML = '¡Has ganado campeona!';
   } else if (number > myNumber) {
     clue.innerHTML = 'Demasiado alto';
@@ -19,8 +21,15 @@ function game(number) {
   }
 }
 
+let acc = 0;
+function counterClickFunction() {
+  acc += 1;
+  numberTry.innerHTML = acc;
+}
+
 function handlerFunction() {
   const userNumber = parseInt(input.value);
+  counterClickFunction();
   game(userNumber);
 }
 
