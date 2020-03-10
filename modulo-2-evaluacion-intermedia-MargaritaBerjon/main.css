@@ -12,14 +12,26 @@ body {
 
 .title {
   color: lightcyan;
+  font-size: 40px;
 }
 
 .sub-title {
   color: lightcyan;
+  font-size: 30px;
 }
 
 .btn {
   margin-top: 1rem;
 }
 
-.;
+.clue {
+  font-size: 25px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.try {
+  font-size: 45px;
+  font-weight: bold;
+  color: aliceblue;
+}
