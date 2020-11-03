@@ -8,7 +8,7 @@ const myNumber = getRandomNumber(100);
 let clueMessageShow = '';
 
 function getRandomNumber() {
-  return Math.ceil(Math.random() * max);
+  return Math.ceil(Math.random() * 100);
 }
 console.log('Mi número aleatorio es ' + myNumber);
 
